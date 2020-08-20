@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image upload</title>
+</head>
+<body>
+    <form action="{% url 'dp16app:imgdisplay' %}" method="POST" enctype="multipart/form-data" align="center">
+        {% csrf_token %}
+    Image1:<input type="file" name="immg1" value="img1">
+    Image2:<input type="file" name="immg2" value="img2">
+    <input type="submit" value="submit">
+    </form>   
+</body>
+</html>
